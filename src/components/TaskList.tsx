@@ -29,10 +29,8 @@ export function TaskList() {
       return;
     }
 
-    const randomId = generateId();
-
     const newTask: Task = {
-      id: randomId,
+      id: generateId(),
       title: newTaskTitle,
       isComplete: false,
     };
